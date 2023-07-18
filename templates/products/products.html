@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for obj in data %}
+<h1>Product Name :</h1>
+<h1>{{ obj.name }}</h1><br>
+<img src="{{obj.image.url}}" alt="">
+<h1>Product content :</h1>
+<h1>{{ obj.content }}</h1><br>
+
+<h1>Product price :</h1>
+<h1>{{ obj.price }}</h1><br>
+{% endfor %}
+{% endblock content %}

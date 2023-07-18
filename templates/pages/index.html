@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+<h1>This Person is {{Name}} , he is {{Age}} years
+    old . He's from {{Country}}</h1>
+
+
+{% if Name == "Amine" %}
+<p>This is Amine</p>
+{% else %}
+<p>Name not found</p>
+{% endif %}
+
+
+{% for c in Name %}
+<p>{{c}}</p>
+{% endfor %}
+{%endblock content%}
